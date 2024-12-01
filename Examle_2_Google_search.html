@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                font-family:Arial, Helvetica, sans-serif;
+                background: #202124;
+            }
+            .container {
+                width: 1200px;
+                text-align: center;
+            }
+            h1 {
+                font-size: 4em;
+            }
+            span{
+                color: #fff;
+            }
+            .sub-title {
+                display: flex;
+                justify-content: flex-end;
+                gap: 15px;
+                margin-bottom: 16px;
+            }
+            .sub-title a {
+                font-weight: 700;
+                font-size: 18px;
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+                color: #fff;
+                transition: all 0.8s ease 0s;
+            }
+            .sub-title a:hover {
+                color: lightgray;
+                text-decoration: underline;
+                transition: all 0.8s ease 0s;
+            }
+            form {
+                margin:0 auto;
+                width: 100%;
+            }
+            label {
+                display: block;
+                text-align: left;
+                color: #fff;
+                margin-bottom: 15px;
+            }
+            form input {
+                color: #fff;
+                padding: 5px 15px;
+                width: 100%;
+                min-height: 34px;
+                background: #202124;
+                border: 1px solid #5f6368;
+                box-shadow: none;
+                border-radius: 24px;
+                width: 100%;
+                margin-bottom: 25px;
+                font-size: 18px;
+            }
+            form input:focus {
+                outline: none;
+                box-shadow: 0 1px 6px 0 #171717;
+                background: #303134;
+                border-color: rgba(223,225,229,0);
+            }
+            form input:hover {
+                outline: none;
+                box-shadow: 0 1px 6px 0 #171717;
+                background: #303134;
+                border-color: rgba(223,225,229,0);
+            }
+
+            button {
+                background-color: #303134;
+                border: 1px solid #303134;
+                border-radius: 4px;
+                color: #e8eaed;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                max-width: 144px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+                align-items: center;
+            }
+            button:hover {
+                border: 1px solid #5f6368;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <header class="header">
+                <h1>
+                    <span>G</span>
+                    <span>O</span>
+                    <span>O</span>
+                    <span>G</span>
+                    <span>L</span>
+                    <span>E</span>
+                </h1>
+                <div class="sub-title">
+                    <a href="index.html">Search</a>
+                    <a href="image.html">Image Search</a>
+                </div>
+            </header>
+            <form action="https://google.com/search" method="GET">
+                <label for="all">With all these words</label>
+                <input type="text" name="q" id="all">
+
+                <label for="particular">With this particular word or phrase</label>
+                <input type="text" name="q" id="particular">
+
+                <label for="any">Any of these words</label>
+                <input type="text" name="q" id="any">
+
+                <label for="none">None of these words</label>
+                <input type="text" name="q" id="none">
+                
+                <button type="submit">Google Search</button>
+            </form>
+        </section>
+    </body>
+</html>
